@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "measurements": [
+    {
+      "label": "example_workload",
+      "run_mode": "sampling",
+      "leader": {
+        "index": 0,
+        "event_name": "INST_RETIRED.ANY",
+        "configured_sample_mode": "period",
+        "configured_sample_value": 1000,
+        "sample_mode": "period",
+        "sample_value": 100,
+        "ring_buffer_pages": 128
+      },
+      "members": [
+        {"index": 1, "event_name": "BR_MISP_RETIRED.ALL_BRANCHES", "total_count": 8},
+        {"index": 2, "event_name": "BR_MISP_RETIRED.CONDITIONAL", "total_count": 4},
+        {"index": 3, "event_name": "BR_MISP_RETIRED.NEAR_CALL", "total_count": 0}
+      ],
+      "leader_total_count": 996,
+      "time_enabled": 17012,
+      "time_running": 17012,
+      "lost_samples": 0,
+      "num_samples": 9,
+      "samples": [
+        {"ip": "0x55a7fe46e17c", "pid": 57633, "tid": 57633, "time": 42643745781676, "cpu": 3, "period": 100, "time_enabled": 6140, "time_running": 6140, "counts": {"0": 132, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16f", "pid": 57633, "tid": 57633, "time": 42643745785266, "cpu": 3, "period": 100, "time_enabled": 8851, "time_running": 8851, "counts": {"0": 229, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16f", "pid": 57633, "tid": 57633, "time": 42643745786319, "cpu": 3, "period": 100, "time_enabled": 9904, "time_running": 9904, "counts": {"0": 330, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16f", "pid": 57633, "tid": 57633, "time": 42643745787349, "cpu": 3, "period": 100, "time_enabled": 10930, "time_running": 10930, "counts": {"0": 431, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16f", "pid": 57633, "tid": 57633, "time": 42643745788367, "cpu": 3, "period": 100, "time_enabled": 11952, "time_running": 11952, "counts": {"0": 532, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16c", "pid": 57633, "tid": 57633, "time": 42643745789396, "cpu": 3, "period": 100, "time_enabled": 12978, "time_running": 12978, "counts": {"0": 632, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16c", "pid": 57633, "tid": 57633, "time": 42643745790428, "cpu": 3, "period": 100, "time_enabled": 14011, "time_running": 14011, "counts": {"0": 733, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16c", "pid": 57633, "tid": 57633, "time": 42643745791455, "cpu": 3, "period": 100, "time_enabled": 15038, "time_running": 15038, "counts": {"0": 834, "1": 5, "2": 3, "3": 0}},
+        {"ip": "0x55a7fe46e16c", "pid": 57633, "tid": 57633, "time": 42643745792478, "cpu": 3, "period": 100, "time_enabled": 16061, "time_running": 16061, "counts": {"0": 935, "1": 5, "2": 3, "3": 0}}
+      ]
+    }
+  ]
+}

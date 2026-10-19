@@ -1,0 +1,11 @@
+index,event_name,event_number,umask,mode,sample_period,type,role
+0,INST_RETIRED.ANY,0x00,0x01,sampling,1000,fixed,leader
+5,BR_INST_RETIRED.ALL_BRANCHES,0xC4,0x00,counting,0,raw,member
+6,BR_INST_RETIRED.COND_NTAKEN,0xC4,0x10,counting,0,raw,member
+7,BR_INST_RETIRED.CONDITIONAL,0xC4,0x01,counting,0,raw,member
+8,BR_INST_RETIRED.FAR_BRANCH,0xC4,0x40,counting,0,raw,member
+9,BR_INST_RETIRED.NEAR_CALL,0xC4,0x02,counting,0,raw,member
+10,BR_INST_RETIRED.NEAR_RETURN,0xC4,0x08,counting,0,raw,member
+11,BR_INST_RETIRED.NEAR_TAKEN,0xC4,0x20,counting,0,raw,member
+12,BR_INST_RETIRED.NOT_TAKEN,0xC4,0x10,counting,0,raw,member
+24,MEM_INST_RETIRED.ANY,0xD0,0x83,counting,0,raw,member

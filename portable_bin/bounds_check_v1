@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+BUNDLE_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+PROGRAM=$(basename -- "$0")
+PAYLOAD_DIR="$BUNDLE_DIR/training_payload"
+exec "$PAYLOAD_DIR/runtime/ld-linux-x86-64.so.2" \
+  --inhibit-cache \
+  --library-path "$PAYLOAD_DIR/runtime:$PAYLOAD_DIR" \
+  "$PAYLOAD_DIR/bin/$PROGRAM" "$@"

@@ -1,0 +1,377 @@
+{
+  "schema_version": 2,
+  "configuration": {
+    "class_name": "learning_demo",
+    "target_command": [
+      "/home/lizeren/Desktop/libpmc/libpmc_m1/rebuilt/bin/example_group",
+      "100"
+    ],
+    "target_executable": "/home/lizeren/Desktop/libpmc/libpmc_m1/rebuilt/bin/example_group",
+    "target_arguments": [
+      "100"
+    ],
+    "input_id": "100",
+    "event_file": "/home/lizeren/Desktop/libpmc/libpmc_m1/events/pmc_group_events_full.csv",
+    "leader": {
+      "index": 0,
+      "event_name": "INST_RETIRED.ANY",
+      "mode": "sampling",
+      "sample_period": 48
+    },
+    "members_per_batch": 3,
+    "member_indices": [
+      1,
+      2,
+      3
+    ],
+    "ring_buffer_pages": 128,
+    "runs": 1,
+    "pilot_golden_count": 978,
+    "desired_samples": 20,
+    "target_samples": 20,
+    "required_minimum_samples": 20,
+    "period_calibration_runs": 1,
+    "period_calibration_attempts": 1
+  },
+  "collection": {
+    "file_index": 1,
+    "started_at": "2026-09-23T19:57:29.423789+00:00",
+    "finished_at": "2026-09-23T19:57:29.434485+00:00",
+    "wall_seconds": 0.010708326000894886
+  },
+  "measurements": [
+    {
+      "label": "example_workload",
+      "run_mode": "sampling",
+      "leader": {
+        "index": 0,
+        "event_name": "INST_RETIRED.ANY",
+        "configured_sample_mode": "period",
+        "configured_sample_value": 1000,
+        "sample_mode": "period",
+        "sample_value": 48,
+        "ring_buffer_pages": 128
+      },
+      "members": [
+        {
+          "index": 1,
+          "event_name": "BR_MISP_RETIRED.ALL_BRANCHES",
+          "total_count": 10
+        },
+        {
+          "index": 2,
+          "event_name": "BR_MISP_RETIRED.CONDITIONAL",
+          "total_count": 5
+        },
+        {
+          "index": 3,
+          "event_name": "BR_MISP_RETIRED.NEAR_CALL",
+          "total_count": 0
+        }
+      ],
+      "leader_total_count": 1018,
+      "time_enabled": 27304,
+      "time_running": 27304,
+      "lost_samples": 0,
+      "num_samples": 21,
+      "samples": [
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805958709,
+          "cpu": 3,
+          "time_enabled": 4542,
+          "time_running": 4542,
+          "counts": {
+            "0": 55,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805960847,
+          "cpu": 3,
+          "time_enabled": 6481,
+          "time_running": 6481,
+          "counts": {
+            "0": 129,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805961925,
+          "cpu": 3,
+          "time_enabled": 7558,
+          "time_running": 7558,
+          "counts": {
+            "0": 176,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805962964,
+          "cpu": 3,
+          "time_enabled": 8596,
+          "time_running": 8596,
+          "counts": {
+            "0": 223,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805964003,
+          "cpu": 3,
+          "time_enabled": 9634,
+          "time_running": 9634,
+          "counts": {
+            "0": 270,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805965044,
+          "cpu": 3,
+          "time_enabled": 10677,
+          "time_running": 10677,
+          "counts": {
+            "0": 317,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116f",
+          "time": 13891805966094,
+          "cpu": 3,
+          "time_enabled": 11726,
+          "time_running": 11726,
+          "counts": {
+            "0": 365,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805967145,
+          "cpu": 3,
+          "time_enabled": 12776,
+          "time_running": 12776,
+          "counts": {
+            "0": 420,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805968193,
+          "cpu": 3,
+          "time_enabled": 13822,
+          "time_running": 13822,
+          "counts": {
+            "0": 467,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805969224,
+          "cpu": 3,
+          "time_enabled": 14852,
+          "time_running": 14852,
+          "counts": {
+            "0": 514,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805970256,
+          "cpu": 3,
+          "time_enabled": 15886,
+          "time_running": 15886,
+          "counts": {
+            "0": 561,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805971289,
+          "cpu": 3,
+          "time_enabled": 16920,
+          "time_running": 16920,
+          "counts": {
+            "0": 608,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116f",
+          "time": 13891805972331,
+          "cpu": 3,
+          "time_enabled": 17962,
+          "time_running": 17962,
+          "counts": {
+            "0": 656,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116f",
+          "time": 13891805973362,
+          "cpu": 3,
+          "time_enabled": 18991,
+          "time_running": 18991,
+          "counts": {
+            "0": 703,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116f",
+          "time": 13891805974388,
+          "cpu": 3,
+          "time_enabled": 20015,
+          "time_running": 20015,
+          "counts": {
+            "0": 750,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116f",
+          "time": 13891805975424,
+          "cpu": 3,
+          "time_enabled": 21054,
+          "time_running": 21054,
+          "counts": {
+            "0": 797,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805976465,
+          "cpu": 3,
+          "time_enabled": 22094,
+          "time_running": 22094,
+          "counts": {
+            "0": 852,
+            "1": 6,
+            "2": 3,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805977504,
+          "cpu": 3,
+          "time_enabled": 23136,
+          "time_running": 23136,
+          "counts": {
+            "0": 899,
+            "1": 7,
+            "2": 4,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c116c",
+          "time": 13891805978544,
+          "cpu": 3,
+          "time_enabled": 24175,
+          "time_running": 24175,
+          "counts": {
+            "0": 946,
+            "1": 7,
+            "2": 4,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0x5640007c118f",
+          "time": 13891805979591,
+          "cpu": 3,
+          "time_enabled": 25220,
+          "time_running": 25220,
+          "counts": {
+            "0": 976,
+            "1": 8,
+            "2": 4,
+            "3": 0
+          }
+        },
+        {
+          "ip": "0xffffffffa5400080",
+          "time": 13891805980843,
+          "cpu": 3,
+          "time_enabled": 26485,
+          "time_running": 26485,
+          "counts": {
+            "0": 1018,
+            "1": 10,
+            "2": 5,
+            "3": 0
+          }
+        }
+      ],
+      "collection": {
+        "file_index": 1,
+        "batch": 1,
+        "run": 1,
+        "member_indices": [
+          1,
+          2,
+          3
+        ],
+        "wall_seconds": 0.01052504799918097
+      },
+      "adaptive_validation": {
+        "golden_count": 978,
+        "target_samples": 20,
+        "sample_period": 48,
+        "counter_coverage": 1.0408997955010224,
+        "expected_records": 21.208333333333332,
+        "record_retention": 0.9901768172888016
+      },
+      "pid": 27940,
+      "tid": 27940,
+      "period": 48
+    }
+  ],
+  "failures": []
+}

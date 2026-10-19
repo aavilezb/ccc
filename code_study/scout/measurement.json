@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "measurements": [
+    {
+      "label": "example_workload",
+      "run_mode": "scout",
+      "leader": {
+        "index": 0,
+        "event_name": "INST_RETIRED.ANY",
+        "configured_sample_mode": "period",
+        "configured_sample_value": 1000,
+        "sample_mode": "counting",
+        "sample_value": 0,
+        "ring_buffer_pages": 0
+      },
+      "members": [
+        {"index": 1, "event_name": "BR_MISP_RETIRED.ALL_BRANCHES", "total_count": 8},
+        {"index": 2, "event_name": "BR_MISP_RETIRED.CONDITIONAL", "total_count": 4},
+        {"index": 3, "event_name": "BR_MISP_RETIRED.NEAR_CALL", "total_count": 0}
+      ],
+      "leader_total_count": 978,
+      "time_enabled": 2522,
+      "time_running": 2522,
+      "lost_samples": 0,
+      "num_samples": 0,
+      "samples": [
+      ]
+    }
+  ]
+}

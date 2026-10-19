@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+rebuilt/
+training_payload/
+results/
+exports/
+
+# Function-classification artifacts. Keep source, configuration, and tests in
+# Git; regenerate tensors, checkpoints, plots, and benchmark summaries.
+experiments/function_classification/models/benchmarks/
+experiments/function_classification/models/*/data/
+experiments/function_classification/models/*/external_data/
+experiments/function_classification/models/*/results/
+experiments/function_classification/models/*/external_results/

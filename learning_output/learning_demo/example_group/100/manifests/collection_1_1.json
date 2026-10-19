@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "class": {
+    "name": "learning_demo",
+    "program": "example_group",
+    "input_id": "100",
+    "target_command": [
+      "/home/lizeren/Desktop/libpmc/libpmc_m1/rebuilt/bin/example_group",
+      "100"
+    ],
+    "target_executable": "/home/lizeren/Desktop/libpmc/libpmc_m1/rebuilt/bin/example_group",
+    "target_arguments": [
+      "100"
+    ]
+  },
+  "configuration": {
+    "event_file": "/home/lizeren/Desktop/libpmc/libpmc_m1/events/pmc_group_events_full.csv",
+    "member_indices": [
+      1,
+      2,
+      3
+    ],
+    "member_groups": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "runs_per_group": 1,
+    "total_trace_files": 1,
+    "start_index": 1,
+    "ring_buffer_pages": 128,
+    "base_samples": 100,
+    "reference_instructions": 10000000,
+    "minimum_samples": 20,
+    "maximum_samples": 1000,
+    "minimum_period": 1,
+    "calibration_runs_per_group": 1,
+    "maximum_calibration_attempts": 3
+  },
+  "pilot": {
+    "measurement_label": "example_workload",
+    "golden_count": 978,
+    "desired_samples": 20,
+    "target_samples": 20,
+    "initial_period": 48,
+    "chosen_period": 48,
+    "wall_seconds": 0.06260731499969552,
+    "measurement": {
+      "label": "example_workload",
+      "run_mode": "scout",
+      "leader": {
+        "index": 0,
+        "event_name": "INST_RETIRED.ANY",
+        "configured_sample_mode": "period",
+        "configured_sample_value": 1000,
+        "sample_mode": "counting",
+        "sample_value": 0,
+        "ring_buffer_pages": 0
+      },
+      "members": [
+        {
+          "index": 1,
+          "event_name": "BR_MISP_RETIRED.ALL_BRANCHES",
+          "total_count": 8
+        },
+        {
+          "index": 2,
+          "event_name": "BR_MISP_RETIRED.CONDITIONAL",
+          "total_count": 4
+        },
+        {
+          "index": 3,
+          "event_name": "BR_MISP_RETIRED.NEAR_CALL",
+          "total_count": 0
+        }
+      ],
+      "leader_total_count": 978,
+      "time_enabled": 2870,
+      "time_running": 2870,
+      "lost_samples": 0,
+      "num_samples": 0,
+      "samples": []
+    }
+  },
+  "period_calibration": {
+    "required_minimum_samples": 20,
+    "wall_seconds": 0.010620090000884375,
+    "attempts": [
+      {
+        "attempt": 1,
+        "sample_period": 48,
+        "minimum_observed_samples": 21,
+        "measurements": [
+          {
+            "batch": 1,
+            "run": 1,
+            "member_indices": [
+              1,
+              2,
+              3
+            ],
+            "num_samples": 21,
+            "leader_total_count": 1018,
+            "lost_samples": 0,
+            "time_enabled": 29551,
+            "time_running": 29551,
+            "wall_seconds": 0.010620090000884375
+          }
+        ]
+      }
+    ]
+  },
+  "timing": {
+    "started_at": "2026-09-23T19:57:29.349974+00:00",
+    "finished_at": "2026-09-23T19:57:29.435175+00:00",
+    "pilot_wall_seconds": 0.06260731499969552,
+    "calibration_wall_seconds": 0.010620090000884375,
+    "sampling_target_wall_seconds": 0.01052504799918097,
+    "collector_wall_seconds": 0.08518263599944476,
+    "successful_target_runs": 1,
+    "failed_target_runs": 0,
+    "mean_successful_target_wall_seconds": 0.01052504799918097
+  },
+  "quality": {
+    "counter_coverage": {
+      "minimum": 1.0408997955010224,
+      "mean": 1.0408997955010224,
+      "maximum": 1.0408997955010224
+    },
+    "record_retention": {
+      "minimum": 0.9901768172888016,
+      "mean": 0.9901768172888016,
+      "maximum": 0.9901768172888016
+    },
+    "sample_count": {
+      "minimum": 21.0,
+      "mean": 21.0,
+      "maximum": 21.0
+    },
+    "minimum_time_running_ratio": 1.0,
+    "total_lost_samples": 0
+  },
+  "kernel": {
+    "release": "5.15.0-191-generic",
+    "perf_event_max_sample_rate_start": 100000,
+    "perf_event_max_sample_rate_end": 100000,
+    "perf_cpu_time_max_percent_start": 25,
+    "perf_cpu_time_max_percent_end": 25
+  },
+  "trace_files": [
+    "/home/lizeren/Desktop/libpmc/libpmc_m1/learning_output/learning_demo/example_group/100/traces/learning_demo_1.json"
+  ],
+  "failures": []
+}
